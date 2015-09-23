@@ -22,4 +22,14 @@ public class Place {
 
     @Column(name = "DESCRIPTION")
     private double description;
+
+    public void settitle(String title) {
+        this.title = title;
+    }
+    public void setlongitude(double longitude) {
+        this.longitude = longitude;
+    }
+    public void setdescription(double description) {
+        this.description = description;
+    }
 }

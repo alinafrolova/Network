@@ -23,4 +23,11 @@ public class Message {
 
     @Column(name = "DESCRIPTION")
     private double description;
+
+    public void settitle(String title) {
+        this.title = title;
+    }
+    public void setdescription(double description) {
+        this.description = description;
+    }
 }

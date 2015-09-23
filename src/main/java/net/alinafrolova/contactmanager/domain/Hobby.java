@@ -20,5 +20,12 @@ public class Hobby {
     @Column(name = "DESCRIPTION")
     private String description;
 
+    public void settitle(String title) {
+        this.title = title;
+    }
+    public void setdescription(String description) {
+        this.description = description;
+    }
+
 
 }

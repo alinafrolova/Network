@@ -10,8 +10,9 @@ import java.util.Set;
 /**
  * Created by Frolova.A on 9/23/15.
  */
-@Entity //Класс представляет объект, который нужно долговременно хранить.
-@Table(name = "CONTACTS") //Свойства класса будем хранить в таблице CONTACTS.
+
+@Entity
+@Table(name = "CONTACT")
 
 public class Contact {
     @Id //Это поле уникальное для объектов, то есть по нему будем искать объекты.
@@ -33,4 +34,20 @@ public class Contact {
 
     @Column(name = "PLACES") //Это свойство будет храниться в столбце places.
     private Set<Place> places;
+
+    public void setfirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setlastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setbirthDate(LocaleData birthDate) {
+        this.birthDate = birthDate;
+    }
+       public void sethobbies(Set<Hobby> hobbies) {
+        this.hobbies = hobbies;
+    }
+    public void setplaces(Set<Place> places) {
+        this.places = places;
+    }
 }

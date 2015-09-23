@@ -12,7 +12,13 @@
 
     <context:component-scan base-package="net.alinafrolova" />
 
-    <bean></bean>
+    <bean id="CONTACT" class="net.alinafrolova.contactmanager.domain">
+        <constructor-arg name="FIRSTNAME" value="Anton" />
+        <constructor-arg name="LASTNAME" value="Karaychka" />
+        <constructor-arg name="BIRTHDATE" value="25.05.86" />
+        <constructor-arg name="HOBBIES" value="Beer" />
+        <constructor-arg name="PLACES" value="Lviv" />
+    </bean>
 
 
 </beans>
