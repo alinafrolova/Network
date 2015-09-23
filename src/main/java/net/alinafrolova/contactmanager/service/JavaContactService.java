@@ -1,9 +1,8 @@
 package net.alinafrolova.contactmanager.service;
 
 import net.alinafrolova.contactmanager.web.Contact;
-
 import net.alinafrolova.contactmanager.web.Message;
-import org.joda.time.LocalDate;
+import sun.util.resources.LocaleData;
 
 import java.util.List;
 import java.util.Set;
@@ -13,7 +12,8 @@ import java.util.Set;
  */
 
 public interface JavaContactService {
-    public void createContact(String contactA, String contactB, LocalDate localdate);
+
+    public void createContact(String contactA, String contactB, LocaleData localdate);
     public void addHobby (String hobbyA, String hobbyB);
     public void addPlace (String placeA, String placeB, double a, double b);
     public void addFriendship (Contact contactA, Contact contactB);

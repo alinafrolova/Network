@@ -15,4 +15,6 @@ public interface  ContactDao {
 
     public List<Contact> getAllContacts();
     public void clearAll();
+
+
 }

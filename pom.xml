@@ -7,6 +7,48 @@
     <groupId>com.frolova</groupId>
     <artifactId>Network</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.1.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>3.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>3.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.2.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.1.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>3.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-dao</artifactId>
+            <version>2.0.8</version>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
 
     <name>Java project with JUnit and Spring Core </name>
@@ -55,6 +97,39 @@
               <groupId>org.springframework</groupId>
               <artifactId>spring-webmvc</artifactId>
               <version>3.1.0.RELEASE</version>
+          </dependency>
+
+          <dependency>
+              <groupId>javax.persistence</groupId>
+              <artifactId>persistence-api</artifactId>
+              <version>1.0</version>
+          </dependency>
+          <dependency>
+              <groupId>org.hibernate</groupId>
+              <artifactId>hibernate-core</artifactId>
+              <version>3.3.2.GA</version>
+          </dependency>
+          <dependency>
+              <groupId>org.hibernate</groupId>
+              <artifactId>hibernate-annotations</artifactId>
+              <version>3.3.1.GA</version>
+          </dependency>
+          <dependency>
+              <groupId>org.hibernate</groupId>
+              <artifactId>hibernate-commons-annotations</artifactId>
+              <version>3.3.0.ga</version>
+          </dependency>
+
+          <dependency>
+              <groupId>org.springframework</groupId>
+              <artifactId>spring-tx</artifactId>
+              <version>${org.springframework-version}</version>
+          </dependency>
+
+          <dependency>
+              <groupId>org.springframework</groupId>
+              <artifactId>spring-orm</artifactId>
+              <version>${org.springframework-version}</version>
           </dependency>
       </dependencies>
   </dependencyManagement>
